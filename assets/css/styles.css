@@ -8,6 +8,7 @@
 }
 html {
 	font: normal 16px 'Muli', sans-serif;
+	/* letter-spacing: 0.0625em; */
 	color: #555;
 }
 ul, nav {
@@ -65,7 +66,7 @@ section:not(.hero):nth-child(even) {
 hr {
 	width: 250px;
 	height: 2px;
-	background-color: #3f51b5;
+	background-color: #555;
 	border: 0;
 	margin-bottom: 50px;
 }
@@ -104,6 +105,8 @@ header {
 	padding: 35px 100px 0;
 	-webkit-animation: 1s fadein 0.5s forwards;
 	animation: 1s fadein 0.5s forwards;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
 	opacity: 0;
 	color: #fff;
 }
@@ -124,9 +127,6 @@ header {
 	}
 }
 
-header h2 {
-	font-family: 'Muli', sans-serif;
-}
 header nav {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -169,12 +169,14 @@ header nav li {
 	z-index: -1;
 }
 .hero h1 {
-	font: bold 60px;
+	font-size: 60px;
 	margin-bottom: 15px;
+	font-weight: 700;
 }
 .hero h3 {
-	font: normal 28px;
+	font-size: 28px;
 	margin-bottom: 40px;
+	font-weight: 400;
 }
 .hero a.btn {
 	padding: 20px 46px;
